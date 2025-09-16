@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#background{
+    background-image: url(38160.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+:root {
+    --orange: #e98809;
+    --winning-blocks: #186363;
+}
+
+body{
+    margin: ;
+    color: var(--orange);
+    font-family: "Bitcount Grid Double", system-ui;
+}
+h1{
+    text-align: center;
+    font-size: 114px;
+    margin-top: -175px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: none;
+}   
+
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 6px solid;
+    border-bottom: 6px solid;
+    cursor: pointer;
+    box-shadow: 0px 0px  12px 2px grey ,inset 0px 0px 10px 2px #fae1c2;
+}
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6)~.box{
+    border-bottom: none;
+}
+.box:hover{
+    background-color: #fae1c2;
+}
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #d64d4d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #ff0303}
+
+button:active {
+  background-color: #ff0303;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
